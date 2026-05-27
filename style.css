@@ -100,6 +100,79 @@ input , button{
         width: 8rem;
     }
 }
+
+@media (min-width: 469px) and (max-width: 766px) {
+
+    html{
+        font-size: 58%;
+    }
+
+    .container{
+        width: 85%;
+        padding: 2rem;
+    }
+
+    /* input + button */
+    input{
+        width: 70%;
+    }
+
+    .btn{
+        width: 25%;
+    }
+
+    #list{
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    li button{
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    .container{
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .center h1{
+        font-size: 2rem;
+    }
+
+    input{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .btn{
+        width: 30%;
+    }
+
+    #list{
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    li button{
+        margin-top: 0.5rem;
+    }
+}
+
 @media(max-width:300px){
 
     body{
