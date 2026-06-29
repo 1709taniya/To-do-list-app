@@ -3,6 +3,7 @@
 ## Features
 - Add tasks
 - Delete tasks
+- Mark completed task
 - Responsive UI
 
 ## Technologies Used
