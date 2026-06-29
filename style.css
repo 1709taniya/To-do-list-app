@@ -1,196 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #979191;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #979191;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: url(./task-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container{
-    height: auto;
-    width: 90%;
-    max-width: 40rem;
-    padding: 2rem;
-    background-color: rgba(250, 251, 252, 0.5);
-    border-radius: 1rem;
-    box-shadow: 2px 2px 10px #414141;
+.container {
+  height: auto;
+  width: 90%;
+  max-width: 40rem;
+  padding: 2rem;
+  background-color: rgba(250, 251, 252, 0.5);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #0e0e0e;
+  background: #4f4f4f;
 }
 
-.center{
-    text-align: center;
-    margin-bottom: 2rem;
+.center {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: beige;
 }
 
-h1{
-    font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem;
 }
 
-
-input{
-    width: 27rem;
-    height: 3.5rem;
-    padding-left: 1rem;
-    border-radius: 0.6rem;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    margin: 0.4rem;
+#entertask {
+  width: 27rem;
+  height: 3.5rem;
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin: 0.4rem;
+  background: #e3dddd;
+  color: #484343;
 }
 
-.btn{
-    width: 7rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    height: 3.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 1px 1px 2px #414141;
+.btn {
+  width: 7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 2px #414141;
+  background: #e3dddd;
 }
 
-#list{
-    width: 34rem;
-    list-style: none;
-    font-size: 1.6rem;
-    
+#list {
+  width: 34rem;
+  list-style: none;
+  font-size: 1.6rem;
 }
-li{
-    height: auto;
-    width: 34rem;
-    padding: 0.5rem;
-    border: 1px solid white;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0.4rem;
+li {
+  height: auto;
+  width: 34rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  flex-wrap: wrap;
+  margin: 0.4rem;
+  align-items: center;
+  color: #f5f2f7;
+  content-visibility: auto;
+  position: relative;
 }
-li button{
-    height: 2.5rem;
-    width: auto;
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 2px #414141;
-    margin:0.4rem;
-      
-}
-
-input , button{
-    border: none;
-    outline: none;
+li button {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 2px #414141;
+  margin: 0.4rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-@media(max-width:767px){
+#entertask,
+button {
+  border: none;
+  outline: none;
+}
 
-    html{
-        font-size: 50%;
-    }
+#checkbox {
+  margin-right: 0.7rem;
+  height: 3rem;
+  width: 2rem;
+  flex-shrink: 0;
+}
+.left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+#dlt-task {
+  position: absolute;
+  right: 0;
+}
+span {
+  height: auto;
+  width: 24rem;
+  padding-left: 0.5rem;
+}
 
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
 
-    .btn{
-        width: 8rem;
-    }
+  .btn {
+    width: 8rem;
+  }
 }
 
 @media (min-width: 469px) and (max-width: 766px) {
+  html {
+    font-size: 58%;
+  }
 
-    html{
-        font-size: 58%;
-    }
+  .container {
+    width: 85%;
+    padding: 2rem;
+  }
 
-    .container{
-        width: 85%;
-        padding: 2rem;
-    }
+  #entertask {
+    width: 70%;
+  }
 
-    /* input + button */
-    input{
-        width: 70%;
-    }
+  .btn {
+    width: 25%;
+  }
 
-    .btn{
-        width: 25%;
-    }
+  #list {
+    width: 100%;
+  }
 
-    #list{
-        width: 100%;
-    }
+  li {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
-    li{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    li button{
-        margin-top: 0.5rem;
-    }
+  li button {
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
 
-    html{
-        font-size: 55%;
-    }
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
 
-    .container{
-        width: 90%;
-        padding: 1.5rem;
-    }
+  .center h1 {
+    font-size: 2rem;
+  }
 
-    .center h1{
-        font-size: 2rem;
-    }
+  #entertask {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
 
-    input{
-        width: 60%;
-        margin-bottom: 1rem;
-    }
+  .btn {
+    width: 30%;
+  }
 
-    .btn{
-        width: 30%;
-    }
+  #list {
+    width: 100%;
+  }
 
-    #list{
-        width: 100%;
-    }
+  li {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
-    li{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    li button{
-        margin-top: 0.5rem;
-    }
+  li button {
+    margin-top: 0.5rem;
+  }
 }
 
-@media(max-width:300px){
+@media (max-width: 300px) {
+  body {
+    height: 100vh;
+  }
 
-    body{
-        height: 100vh;
-    }
+  html {
+    font-size: 37.5%;
+  }
 
-    html{
-        font-size: 37.5%;
-    }
+  #entertask {
+    width: 25rem;
+  }
 
-    #entertask{
-       
-        width: 25rem;
-    }
-
-    .btn{
-        width:10rem;
-        font-size: 2rem;
-    }
+  .btn {
+    width: 10rem;
+    font-size: 2rem;
+  }
 }
-
