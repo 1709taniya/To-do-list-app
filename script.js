@@ -64,8 +64,8 @@ function createTask(tasklist, task) {
       left.style.textDecoration = "line-through";
       left.style.opacity = "0.6";
     } else {
-      tasklist.style.textDecoration = "none";
-      tasklist.style.opacity = "1";
+      left.style.textDecoration = "none";
+      left.style.opacity = "1";
     }
   });
 
